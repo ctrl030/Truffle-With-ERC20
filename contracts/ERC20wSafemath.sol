@@ -2,7 +2,7 @@ import "./Ownable.sol";
 import "./Safemath.sol";
 pragma solidity 0.5.12;
 
-contract ERC20 is Ownable {
+contract BananaCoin is Ownable {
     
     using SafeMath for uint256; 
 
@@ -20,10 +20,10 @@ contract ERC20 is Ownable {
     
     event TransferFromSuccessfulEvent (address sender, uint256 amountTransferred, address recipient, address addressThatIsTransferring);
 
-    constructor (string memory name, string memory symbol, uint256 totalSupply) public {
-        _name = name;
-        _symbol = symbol;
-        _totalSupply = totalSupply;
+    constructor () public {
+        _name = "Banana Coin";
+        _symbol = "BANANAS";
+        _totalSupply = 1000000;
         _decimals = 18;
     }
 
