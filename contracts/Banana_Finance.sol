@@ -2,7 +2,7 @@ import "./Ownable.sol";
 import "./Safemath.sol";
 pragma solidity 0.5.12;
 
-contract BananaCoin is Ownable {
+contract BananaFinance is Ownable {
     
     using SafeMath for uint256; 
 
