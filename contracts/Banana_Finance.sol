@@ -21,9 +21,9 @@ contract BananaFinance is Ownable {
     event TransferFromSuccessfulEvent (address sender, uint256 amountTransferred, address recipient, address addressThatIsTransferring);
 
     constructor () public {
-        _name = "Banana Coin";
-        _symbol = "BANANAS";
-        _totalSupply = 1000000;
+        _name = "Banana Finance";
+        _symbol = "BFI";
+        _totalSupply = 100000;
         _decimals = 18;
     }
 
