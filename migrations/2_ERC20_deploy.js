@@ -11,4 +11,9 @@ module.exports = async function(deployer, network, accounts) {
   await instance.mint(accounts[1], 100);  
 
   await instance.mint(accounts[2], 100);  
+
+  const balance = await instance.balanceOf(accounts[0]);
+  console.log(accounts[0] + " has the balance of this much Bananas: " + String(balance))
+
+
 };
