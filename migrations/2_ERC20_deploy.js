@@ -1,10 +1,10 @@
 const BananaFinance = artifacts.require("BananaFinance");
 
-module.exports = async function(deployer) {
+module.exports = async function(deployer, network, accounts) {
 
   await deployer.deploy(BananaFinance, "Banana Finance", "BFI", 100000);
   
-  let instance = await BananaFinance.deployed();
+  const instance = await BananaFinance.deployed();
 
   await instance.mint(accounts[0], 100);  
 
