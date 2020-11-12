@@ -20,12 +20,21 @@ contract BananaFinance is Ownable {
     
     event TransferFromSuccessfulEvent (address sender, uint256 amountTransferred, address recipient, address addressThatIsTransferring);
 
+    constructor (string memory name, string memory symbol, uint256 totalSupply) public {
+        _name = name;
+        _symbol = symbol;
+        _totalSupply = totalSupply;
+        _decimals = 18;
+    }
+
+    /* 
     constructor () public {
         _name = "Banana Finance";
         _symbol = "BFI";
         _totalSupply = 100000;
         _decimals = 18;
-    }
+    } 
+    */
 
     function name() public view returns (string memory erc20Name) {
         return _name; 
